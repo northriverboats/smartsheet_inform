@@ -4,12 +4,12 @@ block_cipher = None
 
 
 a = Analysis(['smartsheet_inform.py'],
-             pathex=['/opt/smartsheet_inform'],
+             pathex=['/opt/smartsheet_inform','/opt/smartsheet_inform/venv/python-venv-3.5.2/lib/python3.5/site-packages'],
              binaries=[],
              datas=[
-                     ('.env', '.'),
+                 ('.env','.'),
              ],
-             hiddenimports=[],
+             hiddenimports=['smartsheet.reports'],
              hookspath=[],
              runtime_hooks=[],
              excludes=[],
