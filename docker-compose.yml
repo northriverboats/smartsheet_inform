@@ -1,0 +1,9 @@
+version: "2"
+
+services:
+  python-app:
+    image: nrb-python
+    volumes:
+      - ./:/app
+      - /samba/shares/common/Warranty Registrations/INFORM/:/output
+    entrypoint: [python, smartsheet_inform.py]
