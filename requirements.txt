@@ -2,7 +2,7 @@ altgraph==0.17
 certifi==2021.5.30
 chardet==4.0.0
 click==8.0.1
-emailer==1.0.0
+emailer @ git+https://github.com/northriverboats/emailer.git
 idna==2.10
 pyinstaller==4.3
 pyinstaller-hooks-contrib==2021.1
